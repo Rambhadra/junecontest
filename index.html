@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Management System</title>
+  <style>
+    /* Add your CSS styles here */
+    #c1{
+        color: white;
+        
+    }
+    #addStudentForm{
+        padding: 30px;
+        
+    }
+
+    #searchInput{
+        width: 60%;
+        height: 25px;
+        margin-bottom: 30px;
+        background-color: black;
+    }
+
+    #studentTable{
+        width: 50%;
+        height: 100px;
+    }
+
+    #h1{
+        margin: 20px;
+        width: 20%;
+        height: 15%;
+        padding: 10px;
+    }
+
+     .j1{
+        width: 20%;
+        height: 30px;
+        margin: 10px;
+        background-color: black;
+        
+        
+    }
+    .k1{
+        width: 20%;
+        height: 30px;
+        background-color: black;  
+    }
+
+    table ,tr,th{
+      border: 1px solid;
+    }
+    
+  </style>
+</head>
+<body id="c1">
+  <h1>Student Management CRUD</h1>
+
+  
+  <form id="addStudentForm">
+    <label for="name"></label>
+    <input class="j1" type="text" id="name-g1" placeholder="Name" required>
+
+    <label for="age"></label>
+    <input class="j1" type="number" id="age-g1" placeholder="Age" required>
+
+    <label for="grade"></label>
+    <input class="j1" type="text" id="grade-g1" placeholder="Grade" required>
+
+    <label for="degree"></label>
+    <input class="j1" type="text" id="degree-g1" placeholder="Degree" required>
+
+    <label for="email"></label>
+    <input class="k1" type="email" id="email-g1" placeholder="Email" required><br>
+
+    <button id="h1" type="submit">Add Student</button>
+  </form>
+
+  
+  <input type="text" id="searchInput" placeholder="Search by name, email, or degree">
+  <table id="studentTable">
+    <thead id="">
+      <tr id="studentTable-up">
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Grade</th>
+        <th>Degree</th>
+        <th>Email</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="studentTableBody">
+      <!-- Student rows will be dynamically added here -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
